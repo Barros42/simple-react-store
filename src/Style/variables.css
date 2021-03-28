@@ -1,0 +1,17 @@
+:root {
+
+    --main-color: #08012A;
+    --secondary-color: #41A017;
+
+
+    --default-gray: #9a9a9a;
+    --soft-gray: #d6d6d6;
+    --background-gray: #F8F8F8;
+    --red-bootstrap: #DC3545;
+    --disabled-red-button: #dec5c7;
+    --disabled-green-button: #b3c5ab;
+    --green-button: #72BF44;
+
+    --white: #FFFFFF;
+
+}

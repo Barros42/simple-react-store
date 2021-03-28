@@ -1,0 +1,25 @@
+#liven-container{
+    width: 100%;
+    max-width: 100vw;
+    min-height: calc(100% - 160px);
+    max-height: calc(100% - 160px);
+    margin-top: 160px;
+    position: absolute;
+    overflow-y: auto;
+}
+
+#liven-container-inside {
+    width: 75rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+@media (max-width: 600px)
+{
+    #liven-container{
+        margin-top: 80px;
+        min-height: calc(100% - 50px);
+        max-height: calc(100% - 50px);
+    }
+
+}

@@ -1,0 +1,137 @@
+.cart-product{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--soft-gray);
+    border-bottom: 5px solid var(--secondary-color);
+    position: relative;
+}
+
+.cart-photo {
+    width: 80px;
+    height: 80px;
+    background-position: center center;
+    background-size: cover;
+    float: left;
+}
+
+.cart-name{
+    float: left;
+    width: calc(50% - 100px);
+    padding-left: 10px;
+    font-weight: 400;
+    background-color: var(--white);
+}
+
+.cart-remove-item{
+    width: 25px;
+    height: 25px;
+    background-image: url('../../Assets/Images/delete-button-icon.png');
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.cart-price{
+    width: 25%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background-color: var(--white);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.cart-price-half{
+    margin-top: 10px;
+    background-color: var(--white);
+    text-align: left;
+}
+
+.cart-price-half.unit{
+    color: gray;
+    font-size: .8em;
+}
+
+.cart-buttons{
+    width: calc(25% - 20px);
+    height: 100%;
+    float: left;
+    background-color: var(--white);
+    margin-right: 20px;
+}
+
+.cart-buttons-container{
+    width: 100%;
+    border: 1px solid var(--soft-gray);
+    height: 50%;
+    margin-top: 20px;
+}
+
+.quantity-button{
+    float: left;
+    border: none;
+    width: 25%;
+    height: 100%;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.8em;
+    line-height: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.quantity-button.plus{
+    background-color: var(--secondary-color);
+}
+
+.quantity-button.plus:disabled{
+    background-color: var(--disabled-green-button);
+}
+
+.quantity-button.minus{
+    background-color: var(--red-bootstrap);
+}
+
+.quantity-button.minus:disabled{
+    background-color: var(--disabled-red-button);
+}
+
+.cart-buttons-container .quantity{
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: var(--white);
+}
+
+.cart-remove-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+@media (max-width: 600px){
+   .cart-price{
+        font-size: .5em;
+   }
+
+   .cart-name{
+    font-size: .5em;
+   }
+
+   .cart-price-half{
+       margin-top: 15px;
+   }
+
+   .quantity-button{
+        font-size: 1em;   
+   }
+
+}
