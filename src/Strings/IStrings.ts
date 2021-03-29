@@ -16,10 +16,8 @@ export interface IStrings {
     readonly isLoading: string
     readonly moneySymbol: string
 
-
     // Text
     readonly subTotal: string
     readonly total: string
-
-
+    readonly addedWithSuccess: string
 }

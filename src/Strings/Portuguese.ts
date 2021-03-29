@@ -21,6 +21,7 @@ export class PortugueseDictionary implements IStrings {
     // Texts
     readonly subTotal: string = 'Subtotal'
     readonly total: string = 'Total'
+    readonly addedWithSuccess: string = 'Adicionado com sucesso!'
 
     static get() { return new this(); }
 

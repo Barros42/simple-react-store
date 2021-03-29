@@ -29,7 +29,7 @@ export const ProductList = () : JSX.Element => {
     }
 
     const addProductToCart = (product: ProductDTO) => {
-        NotificationManager.success('Adicionado com sucesso!', null, 1000);
+        NotificationManager.success(Strings.get().addedWithSuccess, null, 1000);
         addToCartUseCase.run(product)
     }
 
@@ -41,7 +41,7 @@ export const ProductList = () : JSX.Element => {
             <div id="products">
                 <NotificationContainer/>
                 {(!products.length) && <div id='is-loading'>{Strings.get().isLoading}</div> }
-                { products.map(productData => <Product addFunction={addProductToCart}  data={productData}/>) }
+                { products.map(productData => <Product key={productData.id} addFunction={addProductToCart}  data={productData}/>) }
             </div>
            
         </div>
